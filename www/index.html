@@ -2,15 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!--
-  Customize this policy to fit your own app's needs. For more guidance, see:
-      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-  Some notes:
-      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-          * Enable inline JS: add 'unsafe-inline' to default-src
-  -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -83,23 +74,94 @@
                   <i class="icon material-icons md-only">menu</i>
                 </a>
               </div>
-              <div class="title sliding">作品主页</div>
+              <div class="title sliding">点评主页</div>
             </div>
           </div>
 
           <!-- Scrollable page content-->
           <div class="page-content">
 
-            <!-- 短信 -->
+            <!-- 快捷标签 -->
+            <div style="padding-top: 10px;padding-left: 10px;">
+              <span class="badge color-blue">小说</span>
+              <span class="badge color-blue">广告</span>
+              <span class="badge color-blue">视频</span>
+              <span class="badge color-blue">绘画</span>
+              <span class="badge color-orange">大于100分</span>
+              <span class="badge color-red">大于10元</span>
+            </div>
+            <!-- 循环列表 -->
             <div class="card">
-              <div class="card-header">组织部来了个年轻人</div>
-              <div class="card-content card-content-padding">Card with header and footer. Card headers are used to display card titles and footers for additional information or just for custom actions.</div>
-              <div class="card-footer">Card Footer</div>
+              <div class="card-content card-content-padding">
+                <div>
+                  <img src="img/book1.jpg" height="150px" style="float: left"/>
+                  <div style="font-size: 12px;">
+                    <!-- 标题 -->
+                    <span>标题：组织部来了个年轻人&nbsp;&nbsp;<span class="badge color-blue">小说</span></span>
+                    <!-- 作者 -->
+                    <p>作者：张三</p>
+                    <!-- 简介 -->
+                    <p>简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容</p>
+
+                    <!-- 悬赏说明与进度 -->
+                    <span>悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card">
-              <div class="card-header">Card header</div>
-              <div class="card-content card-content-padding">Card with header and footer. Card headers are used to display card titles and footers for additional information or just for custom actions.</div>
-              <div class="card-footer">Card Footer</div>
+              <div class="card-content card-content-padding">
+                <div>
+                  <img src="img/book1.jpg" height="150px" style="float: left"/>
+                  <div style="font-size: 12px;">
+                    <!-- 标题 -->
+                    <span>标题：组织部来了个年轻人&nbsp;&nbsp;<span class="badge color-blue">小说</span></span>
+                    <!-- 作者 -->
+                    <p>作者：张三</p>
+                    <!-- 简介 -->
+                    <p>简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容</p>
+
+                    <!-- 悬赏说明与进度 -->
+                    <span>悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <div>
+                  <img src="img/book1.jpg" height="150px" style="float: left"/>
+                  <div style="font-size: 12px;">
+                    <!-- 标题 -->
+                    <span>标题：组织部来了个年轻人&nbsp;&nbsp;<span class="badge color-blue">小说</span></span>
+                    <!-- 作者 -->
+                    <p>作者：张三</p>
+                    <!-- 简介 -->
+                    <p>简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容</p>
+
+                    <!-- 悬赏说明与进度 -->
+                    <span>悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content card-content-padding">
+                <div>
+                  <img src="img/book1.jpg" height="150px" style="float: left"/>
+                  <div style="font-size: 12px;">
+                    <!-- 标题 -->
+                    <span>标题：组织部来了个年轻人&nbsp;&nbsp;<span class="badge color-blue">小说</span></span>
+                    <!-- 作者 -->
+                    <p>作者：张三</p>
+                    <!-- 简介 -->
+                    <p>简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容</p>
+
+                    <!-- 悬赏说明与进度 -->
+                    <span>悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
