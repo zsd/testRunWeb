@@ -1,15 +1,19 @@
 routes = [
-  {
+  { // 应用首页
     path: '/',
     url: './index.html',
   },
-  {
+  { // 关于应用
     path: '/about/',
     url: './pages/about.html',
   },
-  {
+  { // 作品
+    path: '/work/',
+    url: './pages/work.html',
+  },
+  { // 
     path: '/catalog/',
-    componentUrl: './pages/catalog.html',
+    componentUrl: './pages/myWorks.html',
   },
   {
     path: '/product/:id/',

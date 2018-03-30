@@ -4,34 +4,61 @@
       <div class="title">个人主页</div>
     </div>
   </div>
-  <div class="page-content">
+  <div class="page-content" style="background-color: #F9F9F9;">
     <!-- 个人信息 -->
     <div class="card">
       <div class="card-content card-content-padding">
+        <div class="row">
+          <div class="col-30">
+            <img src="img/photo1.jpg" width="100%" height="100%"/>
+            <a href="#">修改头像</a>
+          </div>
+          <div class="col-70">
+            <p style="margin: 3px;">姓名：王二狗</p>
+            <p style="margin: 3px;">收入：￥200元 | 300分</p>
+            <p style="margin: 3px;">绑定微信：dawang</p>
+            <p style="margin: 3px;">绑定手机：13812341234</p>
+            <p style="margin: 3px;">绑定微博：新浪王二狗</p>
+          </div>
       </div>
+    </div>
     </div>
 
     <!-- 积分任务 -->
-    <div class="card">
+    <a href="#" style="color: black;">
+      <div class="card">
       <div class="card-content card-content-padding">
+        <span class="badge color-red">1</span>
         完成任务，赚取积分：绑定手机。（10分）
       </div>
     </div>
-
-    <!-- 已发布作品 -->
-    <div class="card">
-      <div class="card-header">
-        已发布作品
-      </div>
-      <div class="card-content card-content-padding">
-      </div>
-    </div>
+    </a>
 
     <!-- 参与点评 -->
     <div class="card">
       <div class="card-header">参与点评</div>
+      <!-- 点评内容 -->
       <div class="card-content card-content-padding">
+        <ul>
+          {{#each products}}
+          <li>
+            <a href="/product/{{id}}/">
+              {{title}}
+            </a>
+          </li>
+          {{/each}}
+        </ul>
       </div>
     </div>
-  </div>
+
 </div>
+
+  <script>
+    return {
+      data: function () {
+        return {
+          products: this.$root.products,
+        };
+      }
+    };
+  </script>

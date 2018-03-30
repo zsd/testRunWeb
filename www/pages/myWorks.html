@@ -5,11 +5,15 @@
         <div class="title">作品主页</div>
       </div>
     </div>
-    <div class="page-content">
+    <div class="page-content" style="background-color: #F9F9F9;">
       <div class="list links-list">
         <ul>
           {{#each products}}
-            <li><a href="/product/{{id}}/">{{title}}</a></li>
+            <li>
+              <a href="/product/{{id}}/">
+                {{title}}
+              </a>
+            </li>
           {{/each}}
         </ul>
       </div>
