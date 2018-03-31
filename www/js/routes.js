@@ -1,18 +1,26 @@
 routes = [
-  { // 应用首页
-    path: '/',
-    url: './index.html',
-  },
-  { // 关于应用
-    path: '/about/',
-    url: './pages/about.html',
-  },
-  { // 作品
-    path: '/work/',
-    url: './pages/work.html',
-  },
-  { // 
-    path: '/catalog/',
+    { // 作品首页
+        path: '/', 
+        url: './index.html',
+    }, 
+    { // 关于应用
+        path: '/about/', 
+        url: './pages/about.html',
+    }, 
+    {
+        path: '/work/', 
+        url: './pages/work.html',
+    }, 
+    { // 作品
+        path: '/work/',
+        url: './pages/work.html',
+    },
+    { // 作品
+        path: '/work/',
+        url: './pages/work.html',
+    }, 
+    { // 我的作品列表
+    path: '/myWorks/',
     componentUrl: './pages/myWorks.html',
   },
   {
