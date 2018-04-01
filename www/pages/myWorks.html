@@ -1,0 +1,84 @@
+<template>
+  <div class="page" data-name="catalog">
+      <div class="navbar">
+          <div class="navbar-inner sliding">
+              <div class="title">我的作品</div>
+          </div>
+      </div>
+
+      <!-- 新增作品按钮 -->
+      <div class="fab fab-right-bottom">
+          <a href="#view-catalog">
+              <i class="icon f7-icons">add</i>
+          </a>
+      </div>
+
+      <div class="page-content" style="background-color: #F9F9F9;">
+          <!-- 循环列表 -->
+          <a href="/work/">
+              <div class="card">
+                  <div class="card-content card-content-padding">
+                      <div class="row">
+                          <div class="col-30">
+                              <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                          </div>
+                          <div class="col-70" style="font-size: 12px;color: #212121;">
+                              <!-- 标题 -->
+                      <span>
+                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                          <span class="badge color-blue">小说</span>
+                        </p>
+                      </span>
+                              <!-- 作者 -->
+                              <p style="margin: 3px;">作者：张三</p>
+                              <!-- 简介 -->
+                              <p style="margin: 3px;">
+                                  简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                              </p>
+                              <!-- 悬赏说明与进度 -->
+                              <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </a>
+
+          <a href="/work/">
+              <div class="card">
+                  <div class="card-content card-content-padding">
+                      <div class="row">
+                          <div class="col-30">
+                              <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                          </div>
+                          <div class="col-70" style="font-size: 12px;color: #212121;">
+                              <!-- 标题 -->
+                      <span>
+                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                          <span class="badge color-blue">小说</span>
+                        </p>
+                      </span>
+                              <!-- 作者 -->
+                              <p style="margin: 3px;">作者：张三</p>
+                              <!-- 简介 -->
+                              <p style="margin: 3px;">
+                                  简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                              </p>
+                              <!-- 悬赏说明与进度 -->
+                              <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+  </div>
+</template>
+<script>
+  return {
+    data: function () {
+      return {
+        products: this.$root.products,
+      };
+    }
+  };
+</script>

@@ -2,15 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!--
-  Customize this policy to fit your own app's needs. For more guidance, see:
-      https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-  Some notes:
-      * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-      * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-      * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-          * Enable inline JS: add 'unsafe-inline' to default-src
-  -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -83,24 +74,146 @@
                   <i class="icon material-icons md-only">menu</i>
                 </a>
               </div>
-              <div class="title sliding">作品主页</div>
+              <div class="title sliding">点评主页</div>
             </div>
           </div>
 
           <!-- Scrollable page content-->
-          <div class="page-content">
+          <div class="page-content" style="background-color: #F9F9F9;">
 
-            <!-- 短信 -->
-            <div class="card">
-              <div class="card-header">组织部来了个年轻人</div>
-              <div class="card-content card-content-padding">Card with header and footer. Card headers are used to display card titles and footers for additional information or just for custom actions.</div>
-              <div class="card-footer">Card Footer</div>
+            <!-- 快捷标签 -->
+            <div style="margin:10px;">
+              <a href="#view-catalog" style="margin-left: 5px;">
+                <span class="badge color-blue">小说</span>
+              </a>
+              <a href="#view-catalog" style="margin-left: 5px;">
+                <span class="badge color-blue">广告</span>
+              </a>
+              <a href="#view-catalog" style="margin-left: 5px;">
+                <span class="badge color-blue">视频</span>
+              </a>
+              <a href="#view-catalog" style="margin-left: 5px;">
+              <span class="badge color-blue">绘画</span>
+              </a>
+              <a href="#view-catalog" style="margin-left: 5px;">
+                <span class="badge color-orange">大于100分</span>
+              </a>
+              <a href="#view-catalog" style="margin-left: 5px;">
+                <span class="badge color-red">大于10元</span>
+              </a>
             </div>
-            <div class="card">
-              <div class="card-header">Card header</div>
-              <div class="card-content card-content-padding">Card with header and footer. Card headers are used to display card titles and footers for additional information or just for custom actions.</div>
-              <div class="card-footer">Card Footer</div>
-            </div>
+            <!-- 循环列表 -->
+            <a href="/work/">
+              <div class="card">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-30">
+                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                    </div>
+                    <div class="col-70" style="font-size: 12px;color: #212121;">
+                      <!-- 标题 -->
+                      <span>
+                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                          <span class="badge color-blue">小说</span>
+                        </p>
+                      </span>
+                      <!-- 作者 -->
+                      <p style="margin: 3px;">作者：张三</p>
+                      <!-- 简介 -->
+                      <p style="margin: 3px;">
+                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                      </p>
+                      <!-- 悬赏说明与进度 -->
+                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="/work/">
+              <div class="card">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-30">
+                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                    </div>
+                    <div class="col-70" style="font-size: 12px;color: #212121;">
+                      <!-- 标题 -->
+                      <span>
+                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                          <span class="badge color-blue">小说</span>
+                        </p>
+                      </span>
+                      <!-- 作者 -->
+                      <p style="margin: 3px;">作者：张三</p>
+                      <!-- 简介 -->
+                      <p style="margin: 3px;">
+                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                      </p>
+                      <!-- 悬赏说明与进度 -->
+                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="/work/">
+              <div class="card">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-30">
+                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                    </div>
+                    <div class="col-70" style="font-size: 12px;color: #212121;">
+                      <!-- 标题 -->
+                      <span>
+                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                          <span class="badge color-blue">小说</span>
+                        </p>
+                      </span>
+                      <!-- 作者 -->
+                      <p style="margin: 3px;">作者：张三</p>
+                      <!-- 简介 -->
+                      <p style="margin: 3px;">
+                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                      </p>
+                      <!-- 悬赏说明与进度 -->
+                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="/work/">
+              <div class="card">
+                <div class="card-content card-content-padding">
+                  <div class="row">
+                    <div class="col-30">
+                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                    </div>
+                    <div class="col-70" style="font-size: 12px;color: #212121;">
+                      <!-- 标题 -->
+                      <span>
+                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                          <span class="badge color-blue">小说</span>
+                        </p>
+                      </span>
+                      <!-- 作者 -->
+                      <p style="margin: 3px;">作者：张三</p>
+                      <!-- 简介 -->
+                      <p style="margin: 3px;">
+                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                      </p>
+                      <!-- 悬赏说明与进度 -->
+                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
 
           </div>
 
@@ -119,6 +232,8 @@
     </div>
 
   </div>
+
+
   <!-- Cordova -->
   <!--
   <script src="cordova.js"></script>
