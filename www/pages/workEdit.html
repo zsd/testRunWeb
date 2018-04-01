@@ -1,23 +1,67 @@
 <!-- 作品 -->
 <div class="page" data-name="about">
-  <div class="navbar">
-    <div class="navbar-inner sliding">
-      <div class="left">
-        <a href="#" class="link back">
-          <i class="icon icon-back"></i>
-          <span class="ios-only">退回</span>
-        </a>
-      </div>
-      <div class="title">组织部来了个年轻人</div>
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+            <div class="left">
+                <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">退回</span>
+                </a>
+            </div>
+            <div class="title">作品编辑</div>
+        </div>
     </div>
-  </div>
-  <div class="page-content">
-    <div class="block-title">原文</div>
 
-    <div class="block block-strong">
-      <p>
-        《组织部来了个年轻人》是王蒙创作的短篇小说，1956年发表于《人民文学》9月号（发表时标题为《组织部新来的青年人》） [1]  。小说从组织部新来的年轻人林震的角度，以处理麻袋厂党支部的问题为中心情节展开叙述，塑造了林震、刘世吾等建设时期的知识分子形象，是较早反映社会主义制度下的人民内部矛盾、揭露官僚主义的文学作品
-      </p>
+    <div class="page-content">
+        <form class="list" id="my-form">
+            <ul>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">标题</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="title" placeholder="请输入标题">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">链接</div>
+                            <div class="item-input-wrap">
+                                <input type="url" name="url" placeholder="请输入链接">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">悬赏</div>
+                            <div class="item-input-wrap">
+                                <input type="text" name="offer" placeholder="请输入悬赏">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">参与人数</div>
+                            <div class="item-input-wrap">
+                                <div class="range-slider range-slider-init" data-label="true">
+                                    <input type="range" value="50" min="0" max="100" step="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <div class="block block-strong row">
+            <div class="col"><a class="button button-fill convert-form-to-data" href="#">提交</a></div>
+            <div class="col"><a class="button button-fill fill-form-from-data" href="#">取消</a></div>
+        </div>
     </div>
-  </div>
 </div>

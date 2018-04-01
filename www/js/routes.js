@@ -7,13 +7,13 @@ routes = [
         path: '/about/', 
         url: './pages/about.html',
     }, 
-    {
-        path: '/work/', 
-        url: './pages/work.html',
+    { // 作品编辑
+        path: '/workEdit/', 
+        url: './pages/workEdit.html',
     }, 
-    { // 作品
-        path: '/work/',
-        url: './pages/work.html',
+    { // 作品点评
+        path: '/workRemark/',
+        url: './pages/workRemark.html',
     },
     { // 作品
         path: '/work/',
