@@ -1,251 +1,252 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#2196f3">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-  <title>试运行</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>试运行</title>
 
-  <link rel="stylesheet" href="framework7/css/framework7.min.css">
-  <link rel="stylesheet" href="css/icons.css">
-  <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <div id="app">
+<div id="app">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
     <!-- Left panel with cover effect-->
     <div class="panel panel-left panel-cover">
-      <div class="view">
-        <div class="page">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">个人中心</div>
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">个人中心</div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="block">个人中心</div>
+                </div>
             </div>
-          </div>
-          <div class="page-content">
-            <div class="block">个人中心</div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- Views/Tabs container -->
     <div class="views tabs ios-edges">
-      <!-- Tabbar for switching views-tabs -->
-      <div class="toolbar tabbar-labels toolbar-bottom-md">
-        <div class="toolbar-inner">
-          <a href="#view-home" class="tab-link tab-link-active">
-            <i class="icon f7-icons ios-only">home</i>
-            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
-            <i class="icon material-icons md-only">home</i>
-            <span class="tabbar-label">点评</span>
-          </a>
-          <a href="#view-catalog" class="tab-link">
-            <i class="icon f7-icons ios-only">list</i>
-            <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
-            <i class="icon material-icons md-only">view_list</i>
-            <span class="tabbar-label">作品</span>
-          </a>
-          <a href="#view-settings" class="tab-link">
-            <i class="icon f7-icons ios-only">settings</i>
-            <i class="icon f7-icons ios-only icon-ios-fill">person_fill</i>
-            <i class="icon material-icons md-only">person</i>
-            <span class="tabbar-label">我的</span>
-          </a>
-        </div>
-      </div>
-      <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
-      <div id="view-home" class="view view-main tab tab-active">
-
-        <!-- Page, data-name contains page name which can be used in page callbacks -->
-        <div class="page" data-name="home">
-          <!-- Top Navbar -->
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="left">
-                <a href="#" class="link icon-only panel-open" data-panel="left">
-                  <i class="icon f7-icons ios-only">menu</i>
-                  <i class="icon material-icons md-only">menu</i>
+        <!-- Tabbar for switching views-tabs -->
+        <div class="toolbar tabbar-labels toolbar-bottom-md">
+            <div class="toolbar-inner">
+                <a href="#view-home" class="tab-link tab-link-active">
+                    <i class="icon f7-icons ios-only">home</i>
+                    <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+                    <i class="icon material-icons md-only">home</i>
+                    <span class="tabbar-label">点评</span>
                 </a>
-              </div>
-              <div class="title sliding">点评主页</div>
+                <a href="#view-catalog" class="tab-link">
+                    <i class="icon f7-icons ios-only">list</i>
+                    <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
+                    <i class="icon material-icons md-only">view_list</i>
+                    <span class="tabbar-label">作品</span>
+                </a>
+                <a href="#view-settings" class="tab-link">
+                    <i class="icon f7-icons ios-only">settings</i>
+                    <i class="icon f7-icons ios-only icon-ios-fill">person_fill</i>
+                    <i class="icon material-icons md-only">person</i>
+                    <span class="tabbar-label">我的</span>
+                </a>
             </div>
-          </div>
-
-          <!-- Scrollable page content-->
-          <div class="page-content" style="background-color: #F9F9F9;">
-
-            <!-- 快捷标签 -->
-            <div style="margin:10px;">
-              <a href="#view-catalog" style="margin-left: 5px;">
-                <span class="badge color-blue">小说</span>
-              </a>
-              <a href="#view-catalog" style="margin-left: 5px;">
-                <span class="badge color-blue">广告</span>
-              </a>
-              <a href="#view-catalog" style="margin-left: 5px;">
-                <span class="badge color-blue">视频</span>
-              </a>
-              <a href="#view-catalog" style="margin-left: 5px;">
-              <span class="badge color-blue">绘画</span>
-              </a>
-              <a href="#view-catalog" style="margin-left: 5px;">
-                <span class="badge color-orange">大于100分</span>
-              </a>
-              <a href="#view-catalog" style="margin-left: 5px;">
-                <span class="badge color-red">大于10元</span>
-              </a>
-            </div>
-            <!-- 循环列表 -->
-            <a href="/work/">
-              <div class="card" style="margin-left:0px; margin-right:0px;">
-                <div class="card-content card-content-padding">
-                  <div class="row">
-                    <div class="col-30">
-                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
-                    </div>
-                    <div class="col-70" style="font-size: 12px;color: #212121;">
-                      <!-- 标题 -->
-                      <span>
-                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
-                          <span class="badge color-blue">小说</span>
-                        </p>
-                      </span>
-                      <!-- 作者 -->
-                      <p style="margin: 3px;">作者：张三</p>
-                      <!-- 简介 -->
-                      <p style="margin: 3px;">
-                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
-                      </p>
-                      <!-- 悬赏说明与进度 -->
-                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="/work/">
-              <div class="card" style="margin-left:0px; margin-right:0px;">
-                <div class="card-content card-content-padding">
-                  <div class="row">
-                    <div class="col-30">
-                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
-                    </div>
-                    <div class="col-70" style="font-size: 12px;color: #212121;">
-                      <!-- 标题 -->
-                      <span>
-                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
-                          <span class="badge color-blue">小说</span>
-                        </p>
-                      </span>
-                      <!-- 作者 -->
-                      <p style="margin: 3px;">作者：张三</p>
-                      <!-- 简介 -->
-                      <p style="margin: 3px;">
-                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
-                      </p>
-                      <!-- 悬赏说明与进度 -->
-                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="/work/">
-              <div class="card" style="margin-left:0px; margin-right:0px;">
-                <div class="card-content card-content-padding">
-                  <div class="row">
-                    <div class="col-30">
-                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
-                    </div>
-                    <div class="col-70" style="font-size: 12px;color: #212121;">
-                      <!-- 标题 -->
-                      <span>
-                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
-                          <span class="badge color-blue">小说</span>
-                        </p>
-                      </span>
-                      <!-- 作者 -->
-                      <p style="margin: 3px;">作者：张三</p>
-                      <!-- 简介 -->
-                      <p style="margin: 3px;">
-                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
-                      </p>
-                      <!-- 悬赏说明与进度 -->
-                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-            <a href="/work/">
-              <div class="card" style="margin-left:0px; margin-right:0px;">
-                <div class="card-content card-content-padding">
-                  <div class="row">
-                    <div class="col-30">
-                      <img src="img/book1.jpg" style="width:100%;height:100%;"/>
-                    </div>
-                    <div class="col-70" style="font-size: 12px;color: #212121;">
-                      <!-- 标题 -->
-                      <span>
-                        <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
-                          <span class="badge color-blue">小说</span>
-                        </p>
-                      </span>
-                      <!-- 作者 -->
-                      <p style="margin: 3px;">作者：张三</p>
-                      <!-- 简介 -->
-                      <p style="margin: 3px;">
-                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
-                      </p>
-                      <!-- 悬赏说明与进度 -->
-                      <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp; 进度：70/120</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-
-          </div>
-
         </div>
-      </div>
+        <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+        <div id="view-home" class="view view-main tab tab-active">
 
-      <!-- Catalog View -->
-      <div id="view-catalog" class="view tab">
-        <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
-      </div>
+            <!-- Page, data-name contains page name which can be used in page callbacks -->
+            <div class="page" data-name="home">
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link icon-only panel-open" data-panel="left">
+                                <i class="icon f7-icons ios-only">menu</i>
+                                <i class="icon material-icons md-only">menu</i>
+                            </a>
+                        </div>
+                        <div class="title sliding">点评主页</div>
 
-      <!-- Settings View -->
-      <div id="view-settings" class="view tab">
-        <!-- Settings page will be loaded here dynamically from /settings/ route -->
-      </div>
+                        <div class="subnavbar">
+                            <form data-search-container=".virtual-list" data-search-item="li" data-search-in=".item-title" class="searchbar searchbar-init">
+                                <div class="searchbar-inner">
+                                    <div class="searchbar-input-wrap">
+                                        <input type="search" placeholder="Search"/>
+                                        <i class="searchbar-icon"></i>
+                                        <span class="input-clear-button"></span>
+                                    </div>
+                                    <span class="searchbar-disable-button">Cancel</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快捷标签 -->
+                <!--<div style="margin-top:50px;background-color: #F9F9F9;">-->
+                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
+                        <!--<span class="badge color-blue">小说</span>-->
+                    <!--</a>-->
+                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
+                        <!--<span class="badge color-blue">广告</span>-->
+                    <!--</a>-->
+                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
+                        <!--<span class="badge color-blue">视频</span>-->
+                    <!--</a>-->
+                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
+                        <!--<span class="badge color-blue">绘画</span>-->
+                    <!--</a>-->
+                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
+                        <!--<span class="badge color-orange">大于100分</span>-->
+                    <!--</a>-->
+                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
+                        <!--<span class="badge color-red">大于10元</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+
+                <!-- 分页列表 -->
+                <div class="page-content ptr-content" style="background-color: #F9F9F9;">
+
+                    <div class="ptr-preloader">
+                        <div class="preloader"></div>
+                        <div class="ptr-arrow"></div>
+                    </div>
+
+                    <div class="list media-list" style="margin: 0px;">
+                        <ul>
+                            <li>
+                                <a href="/workRemark/">
+                                    <div class="card" style="margin-left:0px; margin-right:0px;">
+                                        <div class="card-content card-content-padding">
+                                            <div class="row">
+                                                <div class="col-30">
+                                                    <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                                                </div>
+                                                <div class="col-70" style="font-size: 12px;color: #212121;">
+                                                    <!-- 标题 -->
+                                                    <span>
+                                                    <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                                                        <span class="badge color-blue">小说</span></p>
+                                                </span>
+                                                    <!-- 作者 -->
+                                                    <p style="margin: 3px;">作者：张三</p>
+                                                    <!-- 简介 -->
+                                                    <p style="margin: 3px;">
+                                                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                                                    </p>
+                                                    <!-- 悬赏说明与进度 -->
+                                                    <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        进度：70/120</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/workRemark/">
+                                    <div class="card" style="margin-left:0px; margin-right:0px;">
+                                        <div class="card-content card-content-padding">
+                                            <div class="row">
+                                                <div class="col-30">
+                                                    <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                                                </div>
+                                                <div class="col-70" style="font-size: 12px;color: #212121;">
+                                                    <!-- 标题 -->
+                                                    <span>
+                                                    <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                                                        <span class="badge color-blue">小说</span></p>
+                                                </span>
+                                                    <!-- 作者 -->
+                                                    <p style="margin: 3px;">作者：张三</p>
+                                                    <!-- 简介 -->
+                                                    <p style="margin: 3px;">
+                                                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                                                    </p>
+                                                    <!-- 悬赏说明与进度 -->
+                                                    <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        进度：70/120</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/workRemark/">
+                                    <div class="card" style="margin-left:0px; margin-right:0px;">
+                                        <div class="card-content card-content-padding">
+                                            <div class="row">
+                                                <div class="col-30">
+                                                    <img src="img/book1.jpg" style="width:100%;height:100%;"/>
+                                                </div>
+                                                <div class="col-70" style="font-size: 12px;color: #212121;">
+                                                    <!-- 标题 -->
+                                                    <span>
+                                                    <p style="font-size: 18px;margin-top:0px;">组织部来了个年轻人&nbsp;&nbsp;
+                                                        <span class="badge color-blue">小说</span></p>
+                                                </span>
+                                                    <!-- 作者 -->
+                                                    <p style="margin: 3px;">作者：张三</p>
+                                                    <!-- 简介 -->
+                                                    <p style="margin: 3px;">
+                                                        简介：组织部来了个年轻人小说内容组织部来了个年轻人小说内容组织部来了个年轻人小说内容
+                                                    </p>
+                                                    <!-- 悬赏说明与进度 -->
+                                                    <p style="margin: 3px;">悬赏：100 &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        进度：70/120</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Catalog View -->
+        <div id="view-catalog" class="view tab">
+            <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
+        </div>
+
+        <!-- Settings View -->
+        <div id="view-settings" class="view tab">
+            <!-- Settings page will be loaded here dynamically from /settings/ route -->
+        </div>
     </div>
 
-  </div>
+</div>
 
 
-  <!-- Cordova -->
-  <!--
-  <script src="cordova.js"></script>
-  -->
+<!-- Cordova -->
+<!--
+<script src="cordova.js"></script>
+-->
 
-  <!-- Framework7 library -->
-  <script src="framework7/js/framework7.min.js"></script>
+<!-- Framework7 library -->
+<script src="framework7/js/framework7.min.js"></script>
 
-  <!-- App routes -->
-  <script src="js/routes.js"></script>
+<!-- App routes -->
+<script src="js/routes.js"></script>
 
-  <!-- Your custom app scripts -->
-  <script src="js/app.js"></script>
+<!-- Your custom app scripts -->
+<script src="js/app.js"></script>
 </body>
 </html>
