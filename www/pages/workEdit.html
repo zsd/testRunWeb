@@ -9,12 +9,31 @@
                 </a>
             </div>
             <div class="title">作品编辑</div>
+            <div class="right block block-strong">
+                <a class="button button-fill convert-form-to-data" href="#">提交</a>
+            </div>
         </div>
     </div>
 
     <div class="page-content">
         <form class="list" id="my-form">
             <ul>
+                <li>
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-title item-label">类型</div>
+                            <div class="item-input-wrap">
+                                <select can-value="workType" class="active-state">
+                                    <option value="novel">小说</option>
+                                    <option value="article">作文</option>
+                                    <option value="paint">图画</option>
+                                    <option value="app">应用</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div class="item-content item-input">
                         <div class="item-inner">
@@ -69,8 +88,5 @@
                 </li>
             </ul>
         </form>
-        <div class="block block-strong">
-            <div><a class="button button-fill convert-form-to-data" href="#">提交</a></div>
-        </div>
     </div>
 </div>
