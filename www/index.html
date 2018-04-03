@@ -48,14 +48,14 @@
                     <i class="icon material-icons md-only">home</i>
                     <span class="tabbar-label">点评</span>
                 </a>
-                <a href="#view-catalog" class="tab-link">
+                <a href="#view-myWorks" class="tab-link">
                     <i class="icon f7-icons ios-only">list</i>
                     <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
                     <i class="icon material-icons md-only">view_list</i>
                     <span class="tabbar-label">作品</span>
                 </a>
-                <a href="#view-settings" class="tab-link">
-                    <i class="icon f7-icons ios-only">settings</i>
+                <a href="#view-user" class="tab-link">
+                    <i class="icon f7-icons ios-only">person</i>
                     <i class="icon f7-icons ios-only icon-ios-fill">person_fill</i>
                     <i class="icon material-icons md-only">person</i>
                     <span class="tabbar-label">我的</span>
@@ -69,51 +69,27 @@
             <div class="page" data-name="home">
                 <!-- Top Navbar -->
                 <div class="navbar">
+
                     <div class="navbar-inner">
-                        <div class="left">
-                            <a href="#" class="link icon-only panel-open" data-panel="left">
-                                <i class="icon f7-icons ios-only">menu</i>
-                                <i class="icon material-icons md-only">menu</i>
+                        <div class="left"></div>
+                        <div class="title sliding">点评主页</div>
+                        <div class="right">
+                            <a class="link icon-only searchbar-enable" data-searchbar=".searchbar-components">
+                                <i class="icon material-icons md-only">search</i>
                             </a>
                         </div>
-                        <div class="title sliding">点评主页</div>
-
-                        <div class="subnavbar">
-                            <form data-search-container=".virtual-list" data-search-item="li" data-search-in=".item-title" class="searchbar searchbar-init">
-                                <div class="searchbar-inner">
-                                    <div class="searchbar-input-wrap">
-                                        <input type="search" placeholder="Search"/>
-                                        <i class="searchbar-icon"></i>
-                                        <span class="input-clear-button"></span>
-                                    </div>
-                                    <span class="searchbar-disable-button">Cancel</span>
+                        <form data-search-container=".components-list" data-search-in="a" class="searchbar searchbar-expandable searchbar-components searchbar-init">
+                            <div class="searchbar-inner">
+                                <div class="searchbar-input-wrap">
+                                    <input type="search" placeholder="搜索" class="">
+                                    <i class="searchbar-icon"></i>
+                                    <span class="input-clear-button"></span>
                                 </div>
-                            </form>
-                        </div>
+                                <span class="searchbar-disable-button">取消</span>
+                            </div>
+                        </form>
                     </div>
                 </div>
-
-                <!-- 快捷标签 -->
-                <!--<div style="margin-top:50px;background-color: #F9F9F9;">-->
-                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
-                        <!--<span class="badge color-blue">小说</span>-->
-                    <!--</a>-->
-                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
-                        <!--<span class="badge color-blue">广告</span>-->
-                    <!--</a>-->
-                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
-                        <!--<span class="badge color-blue">视频</span>-->
-                    <!--</a>-->
-                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
-                        <!--<span class="badge color-blue">绘画</span>-->
-                    <!--</a>-->
-                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
-                        <!--<span class="badge color-orange">大于100分</span>-->
-                    <!--</a>-->
-                    <!--<a href="#view-catalog" style="margin-left: 5px;">-->
-                        <!--<span class="badge color-red">大于10元</span>-->
-                    <!--</a>-->
-                <!--</div>-->
 
                 <!-- 分页列表 -->
                 <div class="page-content ptr-content" style="background-color: #F9F9F9;">
@@ -221,13 +197,13 @@
             </div>
         </div>
 
-        <!-- Catalog View -->
-        <div id="view-catalog" class="view tab">
+        <!-- 作品 View -->
+        <div id="view-myWorks" class="view tab">
             <!-- Catalog page will be loaded here dynamically from /catalog/ route -->
         </div>
 
-        <!-- Settings View -->
-        <div id="view-settings" class="view tab">
+        <!-- 用户 View -->
+        <div id="view-user" class="view tab">
             <!-- Settings page will be loaded here dynamically from /settings/ route -->
         </div>
     </div>
